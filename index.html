@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Happy Birthday 💖</title>
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- CUSTOM CURSOR -->
+  <div class="cursor" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="nav-inner">
+      <h1 class="brand">🎀 Happy Birthday</h1>
+      <nav>
+        <ul>
+          <li><a href="#home" class="nav-link" data-target="home">Home</a></li>
+          <li><a href="#about" class="nav-link" data-target="about">About</a></li>
+          <li><a href="#gallery" class="nav-link" data-target="gallery">Gallery</a></li>
+          <li><a href="#wish" class="nav-link" data-target="wish">Wish</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HOME / HERO -->
+    <section id="home" class="section active">
+      <div class="hero">
+        <div class="hero-left">
+          <h2 class="hero-title">Make a Wish ✨</h2>
+          <p class="hero-sub">Today we celebrate you — sweet memories, cake, and cozy moments 💕</p>
+          <div class="hero-ctas">
+            <a class="btn primary hoverable" id="main-cta" href="#gallery" data-target="gallery">See Memories</a>
+            <a class="btn ghost hoverable" href="#wish" data-target="wish">Send a Wish</a>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <!-- circular hero image -->
+          <div class="hero-photo">
+            <img src="image/hero.jpg.jpg" alt="Birthday hero photo (replace me)">
+          </div>
+        </div>
+      </div>
+
+      <!-- dripping SVG -->
+      <div class="drip-wrap" aria-hidden="true">
+        <svg class="drip" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M0,10 C150,90 300,-30 450,40 C600,110 750,0 900,40 C1050,80 1200,0 1200,0 L1200,120 L0,120 Z" fill="#ffd6e8"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About You 🎁</h2>
+        <p class="lead">You light up the room. This site is a tiny celebration of your kindness, adventures, and smiles.</p>
+
+        <div class="about-cards">
+          <div class="about-card">
+            <img src="image/memory1.jpg" alt="cute memory">
+            <h3>Sweet Moments</h3>
+            <p>Little joyful moments that make life sparkle.</p>
+          </div>
+
+          <div class="about-card">
+            <img src="image/memory2.jpg" alt="cute memory">
+            <h3>Fun Times</h3>
+            <p>Laughs, cake, and everything in between.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section">
+      <div class="container">
+        <h2>Memories 📸</h2>
+        <p class="lead">Tap an image to view. Replace these with your own photos (in /images).</p>
+
+        <div class="gallery-grid">
+          <button class="photo-btn hoverable" aria-label="Open image 1">
+            <img src="image/memory3.jpg" alt="Memory 1">
+          </button>
+          <button class="photo-btn hoverable" aria-label="Open image 2">
+            <img src="image/memory4.jpg" alt="Memory 2">
+          </button>
+          <button class="photo-btn hoverable" aria-label="Open image 3">
+            <img src="image/memory1.jpg" alt="Memory 3">
+          </button>
+          <button class="photo-btn hoverable" aria-label="Open image 4">
+            <img src="image/memory2.jpg" alt="Memory 4">
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- WISH -->
+    <section id="wish" class="section">
+      <div class="container narrow">
+        <h2>Birthday Wish 💌</h2>
+        <p class="lead">May your year be full of light, love, and tiny magical surprises.</p>
+
+        <div class="wish-card">
+          <p class="wish-text">Click celebrate and send some confetti 🎉</p>
+          <button class="btn primary hoverable" id="celebrate-btn">Celebrate 🎀</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>Made with ❤️ just for you</p>
+  </footer>
+
+  <!-- IMAGE MODAL (simple) -->
+  <div id="imgModal" class="modal" aria-hidden="true">
+    <div class="modal-inner">
+      <button class="modal-close" aria-label="Close">✕</button>
+      <img id="modalImg" src="" alt="Large view">
+    </div>
+  </div>
+</body>
+</html>
